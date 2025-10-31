@@ -1,0 +1,11 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  CEREBRAS_API_KEY = "YOUR_API_KEY_HERE"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
